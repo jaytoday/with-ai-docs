@@ -35,9 +35,10 @@
       ]
     },
     {
-      "group": "API Documentation",
+      "group": "Documentation",
       "pages": [
-        "api-reference/introduction"
+        "url-formatting",
+        "chatbot-instructions"
       ]
     }
   ],

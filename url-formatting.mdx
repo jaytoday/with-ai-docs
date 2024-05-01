@@ -3,30 +3,22 @@ title: 'URL Formatting Guidelines'
 description: 'How to format preconfigured WithAI agent links'
 ---
 
-<Note>
-  There likely needs to be an API to see the available templates, and for each template the suggested configuration options. 
-</Note>
 
-## Welcome
+## Agent URLs
 
-There are two ways to build API documentation: [OpenAPI](https://mintlify.com/docs/api-playground/openapi/setup) and [MDX components](https://mintlify.com/docs/api-playground/mdx/configuration). For the starter kit, we are using the following OpenAPI specification.
+Every agent template has a corresponding unique URL. 
 
-<Card
-  title="Plant Store Endpoints"
-  icon="leaf"
-  href="https://github.com/mintlify/starter/blob/main/api-reference/openapi.json"
->
-  View the OpenAPI specification file
-</Card>
+You can find agent templates on the [WithAI website](https://www.getwith.ai) or via the [List Templates API](/api-reference/list-templates). 
 
-## Authentication
+## Configuring Agent URLs with Context
 
-All API endpoints are authenticated using Bearer tokens and picked up from the specification file.
+Each agent URL can be modified with a URL-encoded `context` query argument specifying more information about the task the agent should perform. The `context` value can be any natural language string. 
+
+For example, this agent URL pre-fills the agent template with a specific task:
 
 ```json
-"security": [
-  {
-    "bearerAuth": []
-  }
-]
+https://www.getwith.ai/automate-instagram?context=Respond%20to%20customer%20messages%20thanks%20for%20reaching%20out%20and%20tell%20them%20I%20will%20get%20back%20to%20them%20soon
 ```
+
+
+You can generate pre-configured URLs directly from the WithAI website and get specifications about the parameters that can be configured via the [Template Details API](/api-reference/template-details). 

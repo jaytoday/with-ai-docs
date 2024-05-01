@@ -3,31 +3,70 @@ title: 'Chatbot Instructions'
 description: 'How to instruct chatbots to construct WithAI agent links'
 ---
 
-<Note>
-  If you're not looking to build API reference documentation, you can delete
-  this section by removing the api-reference folder.
-</Note>
 
-## Welcome
+## Agent-Specific Prompts
 
-There are two ways to build API documentation: [OpenAPI](https://mintlify.com/docs/api-playground/openapi/setup) and [MDX components](https://mintlify.com/docs/api-playground/mdx/configuration). For the starter kit, we are using the following OpenAPI specification.
+You can get chatbot instructions specific to each agent template by visiting the agent template page on the [WithAI website](https://www.getwith.ai) or using the [Template Details API](/api-reference/template-details).
 
-<Card
-  title="Plant Store Endpoints"
-  icon="leaf"
-  href="https://github.com/mintlify/starter/blob/main/api-reference/openapi.json"
->
-  View the OpenAPI specification file
-</Card>
+## Generalized Prompt
 
-## Authentication
+For a single prompt that provides an overview of all available agent templates, you may use the [Chatbot Instructions API](/api-reference/chatbot-instructions) or copy the following:
 
-All API endpoints are authenticated using Bearer tokens and picked up from the specification file.
+```
+You can share secure and easy to use agents with your users by 
+sending them any of the agent template links below. 
+You may add an optional "context" query argument to the URL specifying 
+more information about the task that should be completed by the agent. 
+This value should be URL encoded. 
 
-```json
-"security": [
-  {
-    "bearerAuth": []
-  }
-]
+Available Agents:
+
+Automated Instagram Messaging: Automate your Instagram posts and responses for community engagement, marketing and sales, or customer support.
+        URL: https://www.getwith.ai/automate-instagram
+        Suggested Context: Topics: A comma-separated list of topics to respond to., How to Respond: Notes for the agent about how to respond.
+
+Automated LinkedIn Messaging: Automate your LinkedIn posts and responses for community engagement, marketing and sales, or customer support.
+        URL: https://www.getwith.ai/automate-linkedin
+        Suggested Context: Topics: A comma-separated list of topics to respond to., How to Respond: Notes for the agent about how to respond.
+
+Automated Twitter Messaging: Automate your Twitter posts and responses for community engagement, marketing and sales, or customer support.
+        URL: https://www.getwith.ai/automate-x
+        Suggested Context: Topics: A comma-separated list of topics to respond to., How to Respond: Notes for the agent about how to respond.
+
+Automated Facebook Messaging: Automate your Facebook posts and responses for community engagement, marketing and sales, or customer support.
+        URL: https://www.getwith.ai/automate-threads
+        Suggested Context: Topics: A comma-separated list of topics to respond to., How to Respond: Notes for the agent about how to respond.
+
+Automated Amazon Shopping: Browse and purchase items on Amazon based on your choice of criteria.
+        URL: https://www.getwith.ai/automate-amazon 
+
+Automated Instacart Shopping: Browse and purchase items on Instacart based on your choice of criteria.
+        URL: https://www.getwith.ai/automate-instacart 
+
+Automated Uber Rides: Schedule and request Uber rides based on your choice of criteria.
+        URL: https://www.getwith.ai/automate-uber 
+
+Automated Lyft Rides: Schedule and request Lyft rides based on your choice of criteria.
+        URL: https://www.getwith.ai/automate-lyft 
+
+Automated Delta Flights: Book Delta flights based on your choice of criteria.
+        URL: https://www.getwith.ai/automate-delta 
+
+Automated United Flights: Book United flights based on your choice of criteria.
+        URL: https://www.getwith.ai/automate-united 
+
+Automated OpenTable Reservations: Book OpenTable reservations based on your choice of criteria.
+        URL: https://www.getwith.ai/automate-opentable 
+
+Automated Resy Reservations: Book Resy reservations based on your choice of criteria.
+        URL: https://www.getwith.ai/automate-resy 
+
+Automated Slack Messaging: Automate your Slack messages for team communication, project management, or customer support.
+        URL: https://www.getwith.ai/automate-slack Topics: A comma-separated list of topics to respond to., How to Respond: Notes for the agent about how to respond.
+
+Automated Zoom Meetings: Schedule and host Zoom meetings based on your choice of criteria.
+        URL: https://www.getwith.ai/automate-zoom 
+
+Automated GitHub Notifications: Automate your GitHub notifications for code reviews, pull requests, or issue tracking.
+        URL: https://www.getwith.ai/automate-github 
 ```

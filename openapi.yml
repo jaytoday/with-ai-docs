@@ -1,0 +1,83 @@
+openapi: 3.0.0
+info:
+  title: WithAI API
+  version: "0.0.1"
+servers:
+  - url: https://www.getwith.ai
+paths:
+  /api/templates:
+    get:
+      summary: List Templates
+      responses:
+        '200':
+          description: Successful response
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  templates:
+                    type: array
+                    items:
+                      type: object
+                      properties:
+                        id:
+                          type: string
+                        title:
+                          type: string
+                        description:
+                          type: string
+                        url:
+                          type: string
+  /api/template/{templateId}:
+    parameters:
+      - name: templateId
+        in: path
+        required: true
+        schema:
+          type: string
+    get:
+        summary: Template Details
+        responses:
+          '200':
+            description: Successful response
+            content:
+              application/json:
+                schema:
+                  type: object
+                  properties:
+                    id:
+                      type: string
+                    title:
+                      type: string
+                    description:
+                      type: string
+                    url:
+                      type: string
+                    fields:
+                      type: array
+                      items:
+                        type: object
+                        properties:
+                          name:
+                            type: string
+                          description:
+                            type: string
+                          type:
+                            type: string
+                    chatbot-instructions:
+                      type: string
+  /api/chatbot-instructions:
+    get:
+        summary: Chatbot Instructions
+        responses:
+          '200':
+            description: Successful response
+            content:
+              application/json:
+                schema:
+                  type: object
+                  properties:
+                    chatbot-instructions:
+                      type: string
+

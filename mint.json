@@ -1,9 +1,9 @@
 {
   "$schema": "https://mintlify.com/schema.json",
-  "name": "WithAI",
+  "name": "WithAI Documentation",
   "logo": {
-    "dark": "/logo/logo.png",
-    "light": "/logo/logo.png"
+    "dark": "/logo/with-ai-documentation.png",
+    "light": "/logo/with-ai-documentation.png"
   },
   "favicon": "/apple-touch-icon.png",
   "colors": {
@@ -22,8 +22,8 @@
     }
   ],
   "topbarCtaButton": {
-    "name": "Dashboard",
-    "url": "https://www.getwith.cai"
+    "name": "WithAI",
+    "url": "https://www.getwith.ai"
   },
   "tabs": [],
   "anchors": [],
@@ -35,15 +35,28 @@
       ]
     },
     {
-      "group": "Documentation",
+      "group": "Getting Started",
       "pages": [
         "url-formatting",
         "chatbot-instructions"
+      ]
+    },
+    {
+      "group": "API Reference",
+      "pages": [
+        "api-reference/list-templates",
+        "api-reference/template-details",
+        "api-reference/chatbot-instructions"
       ]
     }
   ],
   "footerSocials": {
     "x": "https://x.com/getwithai",
     "github": "https://github.com/getwithai"
+  },
+  "openapi": ["/openapi.yml"],
+  "modeToggle": {
+    "default": "dark",
+    "isHidden": true
   }
 }

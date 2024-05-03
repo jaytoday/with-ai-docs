@@ -15,7 +15,26 @@ WithAI supports the apps you already use, including:
 - **Shopping**: Amazon, Instacart
 - **Productivity**: Github 
 
-Using the formatting guidelines included in this documentation, apps and chatbots can construct links to pre-configured agents that can perform  actions on behalf of users. 
+<Tip>
+WithAI uses [Anon](https://anon.com) to securely store user credentials, ensuring that only the specific action requested by the user is performed and the user can revoke access to applications at any time.
+</Tip>
+
+
+## Integrate Anywhere With Simple URLs
+
+WithAI is designed so that simple URLs can be used to direct users to AI agents with context about the exact task to be automated.
+
+
+<CardGroup cols={1}>
+  <Card
+    title="URL Guidelines"
+    icon="link"
+    href="/url-formatting"
+  >
+    Construct automation links with simple intuitive guidelines.
+  </Card>
+</CardGroup>
+
 
 ## How It Works 
 
@@ -23,35 +42,33 @@ WithAI is used in three simple steps:
 
 <Steps>
   <Step title="Choose an Agent Template">
-    Users can choose an agent template from the WithAI website, or can be directed to a specific agent template from a share link. 
+    Users can choose an agent template from the WithAI website, or are directed to an agent template from a shared URL.
   </Step>
   <Step title="Configure the Agent Template">
-    The agent template is customized with details about what exactly it should do on behalf of the user. This configuration can optionally be included in the share link constructed by an app or chatbot. 
+    The agent template is customized with details about what exactly it should do on behalf of the user. This information can optionally be included in links to pre-configure agents.
   </Step>
-  <Step title="Sign Into App">
+  <Step title="Sign Into App and Run Agent">
     Once the user has finalized their agent configuration, they sign into their account on the app being used by the agent so the agent can perform automated actions on their behalf.
   </Step>
 </Steps>
 
 
-<Tip>
-WithAI uses [Anon](https://anon.com) to securely store user credentials, ensuring that only the specific action requested by the user is performed and the user can revoke access at any time.
-</Tip>
+
 
 <CardGroup cols={2}>
-  <Card
-    title="URL Formatting Guidelines"
-    icon="link"
-    href="/url-formatting"
-  >
-    Construct links to pre-configure agents for specific actions.
-  </Card>
   <Card
     title="Chatbot Integration"
     icon="robot"
     href="/chatbot-instructions"
   >
     Copy the provided instructions to include in your chatbot prompts.
+  </Card>
+    <Card
+    title="API Reference"
+    icon="code"
+    href="/api-reference"
+  >
+    Use the API for advanced functionality.
   </Card>
 </CardGroup>
 

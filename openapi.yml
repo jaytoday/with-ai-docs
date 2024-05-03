@@ -7,7 +7,7 @@ servers:
 paths:
   /api/templates:
     get:
-      summary: List Templates
+      summary: List Agent Templates
       responses:
         '200':
           description: Successful response
@@ -37,7 +37,7 @@ paths:
         schema:
           type: string
     get:
-        summary: Template Details
+        summary: Agent Template Details
         responses:
           '200':
             description: Successful response
@@ -69,7 +69,7 @@ paths:
                       type: string
   /api/chatbot-instructions:
     get:
-        summary: Chatbot Instructions
+        summary: Instructions for Chatbots
         responses:
           '200':
             description: Successful response

@@ -1,24 +1,29 @@
 ---
-title: 'URL Formatting Guidelines'
-description: 'How to format preconfigured WithAI agent links'
+title: 'WithAI URL Guidelines'
+description: 'How to format WithAI automation links'
 ---
 
+## Specifying a Task to Automate
 
-## Agent URLs
-
-Every agent template has a corresponding unique URL. 
-
-You can find agent templates on the [WithAI website](https://www.getwith.ai) or via the [List Templates API](/api-reference/list-templates). 
-
-## Configuring Agent URLs with Context
-
-Each agent URL can be modified with a URL-encoded `context` query argument specifying more information about the task the agent should perform. The `context` value can be any natural language string. 
-
-For example, this agent URL pre-fills the agent template with a specific task:
+If you have a description of the task to automate but don't know the specific app that should be used to automate the task, you can link to the WithAI website with the task description as the `automate` query parameter with a URL-encoded value:
 
 ```json
-https://www.getwith.ai/automate-instagram?context=Respond%20to%20customer%20messages%20thanks%20for%20reaching%20out%20and%20tell%20them%20I%20will%20get%20back%20to%20them%20soon
+https://getwith.ai?automate=Respond%20to%20customers
+```
+## Specifying an App to Use For Automation
+
+If you know the app to use for an automation but don't know the specific task to automate, you can link to the WithAI website with a supported app name in the path:
+
+```json
+https://getwith.ai/instagram
 ```
 
 
-You can generate pre-configured URLs directly from the WithAI website and get specifications about the parameters that can be configured via the [Template Details API](/api-reference/template-details). 
+## Specifying an App and Task to Automate
+
+If you know the task to automate and the app to use for the automation, provide both the app name in the path and the task description as the `automate` query parameter:
+
+```json
+https://getwith.ai/instagram?automate=Respond%20to%20customers
+```
+

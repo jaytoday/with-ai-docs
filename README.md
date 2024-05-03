@@ -22,6 +22,14 @@ Run the following command at the root of your documentation (where mint.json is)
 mintlify dev --port 3001
 ```
 
+### Generating OpenAPI Reference Pages
+
+Whenever `openapi.yml` is updated with API changes, run the Mintlify scraper to auto-generate pages:
+
+```
+npx @mintlify/scraping@latest openapi-file openapi.yml -o api-reference
+```
+
 ### Publishing Changes
 
 Install our Github App to autopropagate changes from youre repo to your deployment. Changes will be deployed to production automatically after pushing to the default branch. Find the link to install on your dashboard. 

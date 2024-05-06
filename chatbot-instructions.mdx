@@ -14,59 +14,11 @@ For a single prompt that provides an overview of all available agent templates, 
 
 ```
 You can share secure and easy to use agents with your users by 
-sending them any of the agent template links below. 
-You may add an optional "automate" query argument to the URL specifying 
-more information about the task that should be completed by the agent. 
-This value should be URL encoded. 
+sending them a link to a WithAI agent. When a user views an agent page, they can first finalize the configuration of what action the agent should perform. The user is then prompted to securely sign into the application being used by the agent so the agent can autonomously perform the action on their behalf.
 
-Available Agents:
+WithAI agent links are in the form: https://www.getwith.ai/{application} with an optional "automate" query parameter. The value of this query parameter should be a description of the exact task to be completed. 
 
-Automated Instagram Messaging: Automate your Instagram posts and responses for community engagement, marketing and sales, or customer support.
-        URL: https://www.getwith.ai/instagram
-        Suggested Context: Topics: A comma-separated list of topics to respond to., How to Respond: Notes for the agent about how to respond.
+The available applications are: instagram, linkedin, twitter, facebook, amazon, instacart, uber, lyft, delta, united, opentable, resy, slack, zoom, and github.
 
-Automated LinkedIn Messaging: Automate your LinkedIn posts and responses for community engagement, marketing and sales, or customer support.
-        URL: https://www.getwith.ai/linkedin
-        Suggested Context: Topics: A comma-separated list of topics to respond to., How to Respond: Notes for the agent about how to respond.
-
-Automated Twitter Messaging: Automate your Twitter posts and responses for community engagement, marketing and sales, or customer support.
-        URL: https://www.getwith.ai/twitter
-        Suggested Context: Topics: A comma-separated list of topics to respond to., How to Respond: Notes for the agent about how to respond.
-
-Automated Facebook Messaging: Automate your Facebook posts and responses for community engagement, marketing and sales, or customer support.
-        URL: https://www.getwith.ai/facebook
-        Suggested Context: Topics: A comma-separated list of topics to respond to., How to Respond: Notes for the agent about how to respond.
-
-Automated Amazon Shopping: Browse and purchase items on Amazon based on your choice of criteria.
-        URL: https://www.getwith.ai/amazon 
-
-Automated Instacart Shopping: Browse and purchase items on Instacart based on your choice of criteria.
-        URL: https://www.getwith.ai/instacart 
-
-Automated Uber Rides: Schedule and request Uber rides based on your choice of criteria.
-        URL: https://www.getwith.ai/uber 
-
-Automated Lyft Rides: Schedule and request Lyft rides based on your choice of criteria.
-        URL: https://www.getwith.ai/lyft 
-
-Automated Delta Flights: Book Delta flights based on your choice of criteria.
-        URL: https://www.getwith.ai/delta 
-
-Automated United Flights: Book United flights based on your choice of criteria.
-        URL: https://www.getwith.ai/united 
-
-Automated OpenTable Reservations: Book OpenTable reservations based on your choice of criteria.
-        URL: https://www.getwith.ai/opentable 
-
-Automated Resy Reservations: Book Resy reservations based on your choice of criteria.
-        URL: https://www.getwith.ai/resy 
-
-Automated Slack Messaging: Automate your Slack messages for team communication, project management, or customer support.
-        URL: https://www.getwith.ai/slack Topics: A comma-separated list of topics to respond to., How to Respond: Notes for the agent about how to respond.
-
-Automated Zoom Meetings: Schedule and host Zoom meetings based on your choice of criteria.
-        URL: https://www.getwith.ai/zoom 
-
-Automated GitHub Notifications: Automate your GitHub notifications for code reviews, pull requests, or issue tracking.
-        URL: https://www.getwith.ai/github 
+For example, to create a WithAI agent link that responds to Instagram DMs from customers, you would use the following link: https://www.getwith.ai/instagram?automate=Respond%20to%20DMs%20from%20customers
 ```

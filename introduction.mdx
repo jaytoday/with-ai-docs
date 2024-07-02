@@ -1,58 +1,55 @@
 ---
 title: Introduction
-description: 'WithAI is the easiest way to automate tasks using AI agents.'
+description: 'WithAI is the easiest way to automate human-in-the-loop AI workflows.'
 ---
 
 
 ## Overview
 
-[WithAI](https://www.getwith.ai) makes it easier than ever before to automate tasks using AI agents, whether you are engaging with community on social networks, making travel plans or reservations, or purchasing products. 
+[WithAI](https://www.getwith.ai) makes it easier than ever before to automate human-in-the-loop AI workflows. These workflows can be generated and run from a simple natural language prompt, in one line of code. 
 
-WithAI supports the apps you already use, including:
-- **Social Networks**: Instagram, Twitter, Facebook, WhatsApp, LinkedIn
-- **Travel**: Uber, Lyft, Delta, United
-- **Reservations**: OpenTable, Resy, Yelp
-- **Shopping**: Amazon, Instacart
-- **Productivity**: Github 
+Examples of use-cases for WithAI include:
+- **Internal Processes**: Reconciliation and other business workflows.
+- **Conversion Funnels**: A sign-up flow customized for each user.
+- **Product Checkout**: A concierge purchasing experience for customers. 
 
-<Tip>
-WithAI uses [Anon](https://anon.com) to securely store user credentials, ensuring that only the specific action requested by the user is performed and the user can revoke access to applications at any time.
-</Tip>
-
-
-## Integrate Anywhere With Simple URLs
-
-WithAI is designed so that simple URLs can be used to direct users to AI agents with context about the exact task to be automated.
-
-
-<CardGroup cols={1}>
-  <Card
-    title="URL Guidelines"
-    icon="link"
-    href="/url-formatting"
-  >
-    Construct automation links with simple intuitive guidelines.
-  </Card>
-</CardGroup>
 
 
 ## How It Works 
 
-WithAI is used in three simple steps: 
+Utilizing WithAI workflows consists of three simple steps: 
 
 <Steps>
-  <Step title="Choose an Agent Template">
-    Users can choose an agent template from the WithAI website, or are directed to an agent template from a shared URL.
+  <Step title="Create a workflow">
+   Workflows can be created by passing a natural language workflow description to the "createWorkflow" API method, or using an intuitive workflower builder web app.
   </Step>
-  <Step title="Configure the Agent Template">
-    The agent template is customized with details about what exactly it should do on behalf of the user. This information can optionally be included in links to pre-configure agents.
+  <Step title="Run the workflow">
+    Use the "runWorkflow" method to kickstart a workflow. Every workflow consists of a combination of agent reasoning and interactions with human contacts using a variety of messaging channels.
   </Step>
-  <Step title="Sign Into App and Run Agent">
-    Once the user has finalized their agent configuration, they sign into their account on the app being used by the agent so the agent can perform automated actions on their behalf.
+  <Step title="Get the outcome of the workflow">
+    You can poll for updates or use a webhook to be notified of when a workflow has been completed, with a detailed history of the workflow's execution and outcome.
   </Step>
 </Steps>
 
 
+
+## Integrate In One Step With Workflow Links
+
+The three simple steps described above can be combined into one even more simple step. Just generate a URL and give it to your user. 
+
+<CardGroup cols={1}>
+  <Card
+    title="Generating WithAI Links"
+    icon="link"
+    href="/link-formatting"
+  >
+    Construct workflow links with simple intuitive guidelines.
+  </Card>
+</CardGroup>
+
+<Tip>
+Custom GPTs and most other chatbots should implement WithAI via workflow links. 
+</Tip>
 
 
 <CardGroup cols={2}>
@@ -68,8 +65,9 @@ WithAI is used in three simple steps:
     icon="code"
     href="/api-reference"
   >
-    Use the API for advanced functionality.
+    Use the API for generating and running AI workflows.
   </Card>
 </CardGroup>
+
 
 

@@ -37,16 +37,16 @@
     {
       "group": "Getting Started",
       "pages": [
-        "url-formatting",
+        "link-formatting",
         "chatbot-instructions"
       ]
     },
     {
       "group": "API Reference",
       "pages": [
-        "api-reference/list-templates",
-        "api-reference/template-details",
-        "api-reference/chatbot-instructions"
+        "api-reference/create-workflow",
+        "api-reference/run-workflow",
+        "api-reference/get-workflow-status"
       ]
     }
   ],

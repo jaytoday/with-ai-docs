@@ -5,9 +5,9 @@ info:
 servers:
   - url: https://www.getwith.ai
 paths:
-  /api/templates:
-    get:
-      summary: List Agent Templates
+  /api/workflow/create:
+    post:
+      summary: Create Workflow
       responses:
         '200':
           description: Successful response
@@ -16,28 +16,30 @@ paths:
               schema:
                 type: object
                 properties:
-                  templates:
-                    type: array
-                    items:
-                      type: object
-                      properties:
-                        id:
-                          type: string
-                        title:
-                          type: string
-                        description:
-                          type: string
-                        url:
-                          type: string
-  /api/template/{templateId}:
+                  id:
+                    type: string
+  /api/workflow/run:
+    post:
+      summary: Run Workflow
+      responses:
+        '200':
+          description: Successful response
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  id:
+                    type: string
+  /api/workflow/{workflowID}:
     parameters:
-      - name: templateId
+      - name: workflowID
         in: path
         required: true
         schema:
           type: string
     get:
-        summary: Agent Template Details
+        summary: Get Workflow Status
         responses:
           '200':
             description: Successful response
@@ -52,32 +54,3 @@ paths:
                       type: string
                     description:
                       type: string
-                    url:
-                      type: string
-                    context:
-                      type: array
-                      items:
-                        type: object
-                        properties:
-                          name:
-                            type: string
-                          description:
-                            type: string
-                          type:
-                            type: string
-                    chatbot-instructions:
-                      type: string
-  /api/chatbot-instructions:
-    get:
-        summary: Instructions for Chatbots
-        responses:
-          '200':
-            description: Successful response
-            content:
-              application/json:
-                schema:
-                  type: object
-                  properties:
-                    chatbot-instructions:
-                      type: string
-

@@ -1,24 +1,15 @@
 ---
 title: 'Chatbot Instructions'
-description: 'How to instruct chatbots to construct WithAI agent links'
+description: 'How to instruct chatbots to construct WithAI workflow links'
 ---
 
-
-## Agent-Specific Prompts
-
-You can get chatbot instructions specific to each agent template by visiting the agent template page on the [WithAI website](https://www.getwith.ai) or using the [Template Details API](/api-reference/template-details).
-
-## Generalized Prompt
-
-For a single prompt that provides an overview of all available agent templates, you may use the [Chatbot Instructions API](/api-reference/chatbot-instructions) or copy the following:
+Add the following text to your chatbot prompt to provide it with instructions for how to generate WithAI workflow links.
 
 ```
-You can share secure and easy to use agents with your users by 
-sending them a link to a WithAI agent. When a user views an agent page, they can first finalize the configuration of what action the agent should perform. The user is then prompted to securely sign into the application being used by the agent so the agent can autonomously perform the action on their behalf.
+You can share AI-powered workflows by generating a WithAI workflow link. 
 
-WithAI agent links are in the form: https://www.getwith.ai/{application} with an optional "automate" query parameter. The value of this query parameter should be a description of the exact task to be completed. 
+The easiest waya to format a workflow link is to just link to 
+https://getwith.ai  and append a workflow query parameter:
 
-The available applications are: instagram, linkedin, twitter, facebook, amazon, instacart, uber, lyft, delta, united, opentable, resy, slack, zoom, and github.
+Example: https://getwith.ai?workflow=Describe%20your%20workflow
 
-For example, to create a WithAI agent link that responds to Instagram DMs from customers, you would use the following link: https://www.getwith.ai/instagram?automate=Respond%20to%20DMs%20from%20customers
-```

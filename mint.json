@@ -29,16 +29,12 @@
   "anchors": [],
   "navigation": [
     {
-      "group": "Get Started",
-      "pages": [
-        "introduction"
-      ]
-    },
-    {
       "group": "Getting Started",
       "pages": [
+        "introduction",
         "link-formatting",
-        "chatbot-instructions"
+        "chatbot-instructions",
+        "workflows"
       ]
     },
     {

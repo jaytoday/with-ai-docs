@@ -1,15 +1,23 @@
 ---
 title: 'Chatbot Instructions'
-description: 'How to instruct chatbots to construct WithAI workflow links'
+description: 'How to instruct chatbots to generate AskWithAI consultation links'
 ---
 
-Add the following text to your chatbot prompt to provide it with instructions for how to generate WithAI workflow links.
+To enable chatbots to generate personalized consultations, provide them with the following instructions:
 
+```text
+Every consultant on AskWithAI is assigned a unique subdomain. 
+Chatbots should construct consultation links by combining the consultant's subdomain with the consultation plan's identifier in the URL path.
+
+The base URL structure for AskWithAI consultation links is: 
+https://[subdomain].askwith.ai
+
+For example, if the consultant's subdomain is `expert123`, the link would be: 
+https://expert123.askwith.ai
+
+To provide additional context for the consultation, a `context` query parameter can be included in the URL. 
+This parameter allows passing specific information that may help streamline the consultation process.
+
+Here's how the URL might look with additional context: 
+https://expert123.askwith.ai?context=Optional%20additional%20information
 ```
-You can share AI-powered workflows by generating a WithAI workflow link. 
-
-The easiest waya to format a workflow link is to just link to 
-https://getwith.ai  and append a workflow query parameter:
-
-Example: https://getwith.ai?workflow=Describe%20your%20workflow
-

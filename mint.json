@@ -33,16 +33,33 @@
       "pages": [
         "introduction",
         "link-formatting",
-        "chatbot-instructions",
-        "workflows"
+        "chatbot-instructions"
       ]
     },
     {
-      "group": "API Reference",
+      "group": "API Overview",
       "pages": [
-        "api-reference/create-workflow",
-        "api-reference/run-workflow",
-        "api-reference/get-workflow-status"
+        "api-reference/authentication"
+      ]
+    },
+    {
+      "group": "Consultation Plan API",
+      "pages": [
+        "api-reference/list-consultation-plans",
+        "api-reference/get-consultation-plan",
+        "api-reference/create-consultation-plan",
+        "api-reference/update-consultation-plan",
+        "api-reference/delete-consultation-plan"
+      ]
+    },
+    {
+      "group": "Consultation API",
+      "pages": [
+        "api-reference/list-consultations",
+        "api-reference/get-consultation",
+        "api-reference/create-consultation",
+        "api-reference/update-consultation",
+        "api-reference/delete-consultation"
       ]
     }
   ],

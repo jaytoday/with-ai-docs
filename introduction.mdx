@@ -1,82 +1,63 @@
 ---
 title: Introduction
-description: 'WithAI is the easiest way to automate human-in-the-loop AI workflows.'
+description: 'WithAI makes it easy to provide expert consultations on any topic.'
 ---
+
+
 
 
 ## Overview
 
-[WithAI](https://www.getwith.ai) makes it easier than ever before to automate human-in-the-loop AI workflows. These workflows can be generated and run from a simple natural language prompt, in one line of code. 
+[WithAI](https://www.getwith.ai) makes it easy to setup and offer AI-assisted consultations for your product or service.
+
+
+Consultations can either be setup via the API or with AskWithAI Links. 
 
 Examples of use-cases for WithAI include:
-- **Internal Processes**: Reconciliation and other business workflows.
-- **Conversion Funnels**: A sign-up flow customized for each user.
-- **Product Checkout**: A concierge purchasing experience for customers. 
+- **Sales and Onboarding**: Interview customers and provide them with detailed advice. 
+- **Customer Support**: Support customers with troubleshooting and reporting issues. 
+- **Specialized Expertise**: Provide any type of expertise via consultations. 
 
 
+<Tip>
+WithAI is currently in private beta. 
+</Tip>
 
 ## How It Works 
 
-Utilizing WithAI workflows consists of three simple steps: 
+Offering WithAI consultations consists of three simple steps: 
 
 <Steps>
-  <Step title="Create a workflow">
-   Workflows can be created by passing a natural language workflow description to the "createWorkflow" API method, or using an intuitive workflower builder web app.
+  <Step title="Create a consultation plan">
+   Describe what information you need the consultation customer to provide and what information you'll be able to provide in return, and a detailed structured consultation plan is auto-generated containing specific criteria for what is needed for the consultation to be successful. You can review and edit this consultation plan via the WithAI website or the API. 
   </Step>
-  <Step title="Run the workflow">
-    Use the "runWorkflow" method to kickstart a workflow. Every workflow consists of a combination of agent reasoning and interactions with human contacts using a variety of messaging channels.
+  <Step title="Offer your consultation">
+   Each consultation plan has an associated URL that can be shared with your users. This URL accepts an optional `prompt` parameter to provide more context about the consultation. Consultations can also be initiated via the API.
   </Step>
-  <Step title="Get the outcome of the workflow">
-    You can poll for updates or use a webhook to be notified of when a workflow has been completed, with a detailed history of the workflow's execution and outcome.
+  <Step title="Simulate consultations">
+    This step is optional, but assists with evaluating your consultation plans using auto-generated simulated consultations with a variety of mock user personas. Simulated consultations can be managed through the WithAI website or the API. 
   </Step>
 </Steps>
 
-<CardGroup cols={1}>
-  <Card
-    title="Learn about WithAI Workflows"
-    icon="link"
-    href="/workflows"
-  >
-    Learn about the structure of WithAI workflows. 
-  </Card>
-</CardGroup>
 
 
-## Integrate In One Step With Workflow Links
-
-The three simple steps described above can be combined into one even more simple step. Just generate a URL and give it to your user. 
 
 <CardGroup cols={1}>
-  <Card
-    title="Generating WithAI Links"
-    icon="link"
-    href="/link-formatting"
-  >
-    Construct workflow links with simple intuitive guidelines.
-  </Card>
-</CardGroup>
-
-<Tip>
-Custom GPTs and most other chatbots should implement WithAI via workflow links. 
-</Tip>
-
-
-<CardGroup cols={2}>
   <Card
     title="Chatbot Integration"
     icon="robot"
     href="/chatbot-instructions"
   >
-    Copy the provided instructions to include in your chatbot prompts.
+    Custom GPTs or other chatbots can initiate streamlined consultations via AskWithAI Links and formatting the URL with context about the consultation request.
+
   </Card>
     <Card
     title="API Reference"
     icon="code"
     href="/api-reference"
   >
-    Use the API for generating and running AI workflows.
+    Use the API for managing consultation plans and consultations. 
   </Card>
 </CardGroup>
-
 
 

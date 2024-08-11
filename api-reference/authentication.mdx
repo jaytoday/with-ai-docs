@@ -1,0 +1,24 @@
+---
+title: Authentication
+description: Learn how to authenticate with the WithAI API using an API key in the request header.
+---
+
+import Callout from '@theme/Callout'
+
+# Authentication
+
+To interact with the WithAI API, you must authenticate your requests using an API key. This key must be included in the headers of your HTTP requests. 
+
+The API key is used to identify the client application making the request and to grant access to the API's resources. Here's how to correctly use and manage your API key.
+
+## Obtaining an API Key
+
+To obtain your API key, you'll need to create a new WithAI account. After registration, you will be provided with a unique API key and can provision additional keys. Make sure to store this key securely, as it grants access to your With API account.
+
+## Making Authenticated Requests
+
+To authenticate with the With API, include the API key in the `Authorization` header of your HTTP requests. The header should follow this format:
+
+```http
+Authorization: Bearer YOUR_API_KEY
+```

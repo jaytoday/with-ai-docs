@@ -1,0 +1,34 @@
+---
+title: 'AskWithAI Links'
+description: 'How to format AskWithAI consultation links'
+---
+
+Every consultant on AskWithAI is assigned a unique subdomain. Chatbots should construct consultation links by combining the consultant's subdomain with the consultation plan's identifier in the URL path.
+
+### AskWithAI URL Format
+
+The base URL structure for AskWithAI consultation links is:
+
+```bash
+https://[subdomain].askwith.ai
+```
+
+For example, if the consultant's subdomain is `expert123`, the link would be:
+
+```bash
+https://expert123.askwith.ai
+```
+
+## Adding Context to the Consultation
+
+To provide additional context for the consultation, a `context` query parameter can be included in the URL. This parameter allows passing specific information that may help streamline the consultation process.
+
+### Example URL with Context
+
+Here's how the URL might look with additional context:
+
+```bash
+https://expert123.askwith.ai?context=Optional%20additional%20information
+```
+
+This `context` parameter can be tailored to include any relevant details about the consultation request.
